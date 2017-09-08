@@ -146,3 +146,11 @@ pageEncoding|contentType과 동일한 기능을 한다|ISO-8859-1
 <br/>
 
 # 액션
+> JSP간 흐름제어, 자바 애플릿 지원, 자바 빈즈 컴포넌트와 JSP 상호작용 지원
+
+## 대표적인 JSP 액션 종류
+액션|사용 예|기능
+----|----|----
+include|<jsp:include page="xx.jsp"/>|다른 페이지를 현재 페이지에 포함시킨다
+forward|<jsp:forward page="xx.jsp"/>|현재 페이지의 제어를 다른 페이지로 전달한다
+param|<jsp:param name="user" value="홍길동"/>|include, forward 액션에서 사용할 수있는 파라미터 설정
