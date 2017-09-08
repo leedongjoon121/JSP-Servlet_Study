@@ -14,7 +14,7 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 
 * [1. JSP 특징](#JSP특징)
 * [2. Servlet 특징](#Servlet특징)
-
+* [3. HttpServlet클래스](#HttpServlet클래스)
 
 ---
 
@@ -58,3 +58,12 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
   URL에는 매개변수가 표시되지 않음
   
   
+ # HttpServlet클래스
+ ## doGet메서드, doPost메서드
+ > HttpServlet 클래스에서 사용자 요청을 처리하는 doGet/doPost 메서드는 모두 HttpServletRequest와 HttpServletResponse 객체를 매개변수로 가지고있음
+
+```swift
+  public void doGet(HttpServletRequest request, HttpServletResponse response)
+  public void doPost(HttpServletRequest request, HttpServletResponse response)
+```
+
