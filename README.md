@@ -18,6 +18,7 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 
 ---
 
+<br/>
 
 # JSP특징
 
@@ -27,6 +28,8 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 - 4. 빈즈(Beans)라고 하는 자바컴포넌트를 사용할 수 있다.
 - 5. 커스텀 태그를 만들어 사용할 수 있으며, JSTL(JSP Standard Tag Library)과 같은 태그라이브러리를 이용할 수 있다.
 - 6. 스트러츠, 스프링 @MVC등 다양한 프레임워크와 결합하여 개발할 수 있다.
+
+<br/>
 
 # Servlet특징
 ### 서블릿은 "컨테이너"라고 불리는 서버 소프트웨어에 의해 동작한다.
@@ -57,7 +60,8 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
   서버에 전달할 수있는 데이터크기에 제한이 없다
   URL에는 매개변수가 표시되지 않음
   
-  
+ <br/>
+ 
  # HttpServlet클래스
  ## doGet메서드, doPost메서드
  > HttpServlet 클래스에서 사용자 요청을 처리하는 doGet/doPost 메서드는 모두 HttpServletRequest와 HttpServletResponse 객체를 매개변수로 가지고있음
