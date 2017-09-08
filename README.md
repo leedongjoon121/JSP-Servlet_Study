@@ -72,3 +72,15 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 메서드|설명
 ----|----
 getParameter(name)|문자열 name과 같은 이름을 가진 매개변수 값을 가져온다
+getParameterValues(name)|문자열 name과 같은 이름을 가진 매개변수 값을 배열 형태로 가져온다
+getMethod()|현재 요청이 Get인지, Post인지 파악해서 가져옴
+getSession()|현재 세션을 가져옴
+
+<br/>
+
+## HttpServletResponse 클래스의 주요 메서드
+
+메서드|설명
+----|----
+setContentType(type)|문자열 형태의 type에 지정된 MIME Type으로 ContentType을 설정
+sendRedirect(url)|클라이언트 요청을 다른 페이지로 보낸다.
