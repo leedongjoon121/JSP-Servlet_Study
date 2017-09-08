@@ -15,6 +15,7 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 * [1. JSP 특징](#JSP특징)
 * [2. Servlet 특징](#Servlet특징)
 * [3. HttpServlet클래스](#HttpServlet클래스)
+* [4. 지시어](#)
 
 ---
 
@@ -34,6 +35,9 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 # Servlet특징
 ### 서블릿은 "컨테이너"라고 불리는 서버 소프트웨어에 의해 동작한다.
 ### 서블릿 컨테이너는 웹 서버와 마찬가지로 URL을 기반으로 한 요청에 따라 해당 서블릿을 실행한다.
+### 서블릿은 javax.servlet.GenericServlet을 상속받는 javax.servlet.HttpServlet 클래스를 상속받아 구현할 수 있다.
+
+<br/>
 
 ## 서블릿 생명주기
 ### 1. 서블릿 초기화 : init() 메서드
@@ -88,3 +92,31 @@ getSession()|현재 세션을 가져옴
 ----|----
 setContentType(type)|문자열 형태의 type에 지정된 MIME Type으로 ContentType을 설정
 sendRedirect(url)|클라이언트 요청을 다른 페이지로 보낸다.
+
+<br/>
+
+# 지시어
+> 지시어(Directives)는 해당하는 jsp 파일의 속성을 기술하는 곳으로 크게 page, include, taglib으로 나눌수 있음
+
+## page 지시어
+> page 지시어는 현재의 JSP 페이지를 컨테이너에서 처리 하는데 필요한 각종 속성을 기술하는 부분으로, 대개 소스코드 맨앞에서 볼수있음
+
+```swift
+   <%@page 속성1="값" 속성2="값" ... %>
+   
+   <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
+       import = "java.util.*" errorPage="error.jsp"%>    
+```
+
+### page 지시어 속성
+
+속성|설명|기본 설정 값
+----|----|----
+import|JSP 내에서 사용할 외부 자바 패키지나 클래스의 불러오기를 정함|-
+session|세션의 사용유무를 정함|true
+errorPage|현재 페이지에서 오류가 발생할 경우 호출될 페이지를 지정|-
+isErrorPage|오류만을 처리하는 페이지로 지정|false
+contentType|MIME 형식 지정 및 캐릭터셋을 설정 |text/html
+pageEncoding|contentType과 동일한 기능을 한다|ISO-8859-1
+
+ 
