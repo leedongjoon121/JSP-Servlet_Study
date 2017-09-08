@@ -67,3 +67,8 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
   public void doPost(HttpServletRequest request, HttpServletResponse response)
 ```
 
+## HttpServletRequest 클래스의 주요 메서드
+
+메서드|설명
+----|----
+getParameter(name)|문자열 name과 같은 이름을 가진 매개변수 값을 가져온다
