@@ -15,7 +15,7 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 * [1. JSP 특징](#JSP특징)
 * [2. Servlet 특징](#Servlet특징)
 * [3. HttpServlet클래스](#HttpServlet클래스)
-* [4. 지시어](#)
+* [4. 지시어](#지시어)
 
 ---
 
@@ -119,4 +119,21 @@ isErrorPage|오류만을 처리하는 페이지로 지정|false
 contentType|MIME 형식 지정 및 캐릭터셋을 설정 |text/html
 pageEncoding|contentType과 동일한 기능을 한다|ISO-8859-1
 
+<br/>
+
+## include지시어
+> include 지시어는 현재 JSP파일에 다른 HTML이나 JSP문서를 포함하기 위한 기능을 제공, 여러 페이지에 공통으로 들어갈 내용을 관리할 때 유용함
  
+```swift
+  <%@ include file = "포함될 파일 이름" %>
+  <%@ include file = "news.jsp" %>
+```
+
+<br/>
+
+## taglib지시어
+> taglib지시어는 JSP기능을 확장 하기위해 만들어진 커스텀 태그 라이브러리를 JSP파일에서 사용하기 위한 지시어(사용자가 만드는 지시어)
+
+```swift
+   <%@ taglib uri="/META-INF/mytag.tld" prefix="mytag" %>
+```
