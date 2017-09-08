@@ -42,6 +42,11 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
   이때 파라미터로 HttpServletRequest와 HttpServletResponse클래스 타입인 request와 response객체가 제공
   사용자 요청처리는 request로, 응답처리는 response 객체로 처리
 
+### 3. 서블릿 종료 : destroy() 메서드
+> 컨테이너로부터 서블릿 종료 요청이 있을 때 destroy()메서드 호출
+
+<br/>
+
 #### GET방식
 > 서버에 있는 정보를 가져오려고 설계된 방법, 최대 240Byte까지 데이터를 전달할 수있다.(Parameter)
   쿼리스트링을 통해 서버로전달 => http://www.xxx.co.kr/servlet/login?id=dj&name=dongjoon
