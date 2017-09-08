@@ -16,6 +16,7 @@ JSP & Servlet 핵심 기능 & 개념 정리 => 추후 응용 단계까지 업로
 * [2. Servlet 특징](#Servlet특징)
 * [3. HttpServlet클래스](#HttpServlet클래스)
 * [4. 지시어](#지시어)
+* [5. 액션](#액션)
 
 ---
 
@@ -133,7 +134,15 @@ pageEncoding|contentType과 동일한 기능을 한다|ISO-8859-1
 
 ## taglib지시어
 > taglib지시어는 JSP기능을 확장 하기위해 만들어진 커스텀 태그 라이브러리를 JSP파일에서 사용하기 위한 지시어(사용자가 만드는 지시어)
-
+> uri와 prefix로 구성, uri는 TLD파일을 지정하는데 사용, 커스텀태그의 구조를 정의한 파일로 XML형식으로 미리 만들어져 있어야함
+  prefix는 JSP파일에서 커스텀 태그를 사용하기 위한 이름 일종의 접두어 역할
 ```swift
    <%@ taglib uri="/META-INF/mytag.tld" prefix="mytag" %>
+   <body>
+      <mytag:GetInfo name="user1"/>
+   </body>
 ```
+
+<br/>
+
+# 액션
